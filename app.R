@@ -14,7 +14,7 @@ chrome_extra_args <- function(default_args = c("--disable-gpu")) {
   args <- default_args
   # Test whether we are in a shinyapps container
   if (identical(Sys.getenv("R_CONFIG_ACTIVE"), "shinyapps")) {
-    c(args,
+    args <- c(args,
       "--no-sandbox", # required because we are in a container
       "--disable-dev-shm-usage") # in case of low available memory
   }
