@@ -12,4 +12,6 @@ Using `pagedown::chrome_print()` in Shiny is not straightforward because:
 - using promises in Shiny is an advanced topic for many users  
   please, read <https://rstudio.github.io/promises/articles/shiny.html>
 
-This demo app is the first step for writing a vignette on this topic (see <https://github.com/rstudio/pagedown/issues/114>). 
+This demo app is the first step for writing a vignette on this topic (see <https://github.com/rstudio/pagedown/issues/114>).  
+
+If you have any question, please ask on [RStudio Community](https://community.rstudio.com/) or [open an issue in **pagedown**](https://github.com/rstudio/pagedown/issues).
