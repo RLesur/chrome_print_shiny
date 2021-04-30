@@ -64,7 +64,7 @@ server <- function(input, output) {
       )$then(
         onFulfilled = function(value) {
           showNotification(
-            paste("PDF file succesfully generated:"),
+            paste("PDF file succesfully generated"),
             type = "message"
           )
           output$downloadPDF <- downloadHandler(
