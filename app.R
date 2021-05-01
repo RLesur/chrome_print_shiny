@@ -46,7 +46,14 @@ ui <- fluidPage(
     )
   ),
   actionButton("buildPDF", "Build PDF document"),
-  uiOutput("downloadBtn")
+  uiOutput("downloadBtn"),
+  div(
+    "Source code available at",
+    a(
+      "https://github.com/RLesur/chrome_print_shiny",
+      href = "https://github.com/RLesur/chrome_print_shiny"
+    )
+  )
 )
 
 server <- function(input, output) {
