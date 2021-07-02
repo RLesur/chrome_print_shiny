@@ -1,5 +1,5 @@
 ---
-name: Will be low to answer
+name: Will be slow to answer
 about: I certainly will not answer to your questions here
 title: ''
 labels: ''
