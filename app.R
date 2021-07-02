@@ -27,11 +27,14 @@ chrome_extra_args <- function(default_args = c("--disable-gpu")) {
 #'
 #' @return A file path.
 template_file <- function(template) {
-  system.file(
+  template <- system.file(
     "rmarkdown", "templates", template, "skeleton", "skeleton.Rmd",
     package = "pagedown",
     mustWork = TRUE
   )
+  tmp_file <- tempfile(fileext = ".Rmd")
+  file.copy(template, tmp_file)
+  tmp_file
 }
 
 ui <- fluidPage(
